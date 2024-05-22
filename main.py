@@ -2,7 +2,7 @@ from models.data import users
 from utilis.crude import read,add_user,search,remove_user,update_user,map_single_users,map_all_users
 
 if __name__ == '__main__':
-    print(f'witaj {users[0]["name"]}')
+    print(f'witam {users[0]["name"]}')
 
     while True:
         print('0. zakończ program ')
