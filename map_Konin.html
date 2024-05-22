@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e3b9b2ade27c05575b1c3c94de283cea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e3b9b2ade27c05575b1c3c94de283cea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e3b9b2ade27c05575b1c3c94de283cea = L.map(
+                "map_e3b9b2ade27c05575b1c3c94de283cea",
+                {
+                    center: [52.2275, 18.261389],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_875476cda573e6258d82daebd0a8663f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_875476cda573e6258d82daebd0a8663f.addTo(map_e3b9b2ade27c05575b1c3c94de283cea);
+        
+    
+            var marker_81b05ba0133c56d1832cf66416a0bb69 = L.marker(
+                [52.2275, 18.261389],
+                {}
+            ).addTo(map_e3b9b2ade27c05575b1c3c94de283cea);
+        
+    
+            var icon_02322736de606dcf3ef53b00e9f3b1e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81b05ba0133c56d1832cf66416a0bb69.setIcon(icon_02322736de606dcf3ef53b00e9f3b1e2);
+        
+    
+        var popup_903cb2b2dc4c23b20c94b504bf4b6684 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_168fc8b3e65593fc659366a71a847add = $(`<div id="html_168fc8b3e65593fc659366a71a847add" style="width: 100.0%; height: 100.0%;">Staś,postów: 1, Konin</div>`)[0];
+                popup_903cb2b2dc4c23b20c94b504bf4b6684.setContent(html_168fc8b3e65593fc659366a71a847add);
+            
+        
+
+        marker_81b05ba0133c56d1832cf66416a0bb69.bindPopup(popup_903cb2b2dc4c23b20c94b504bf4b6684)
+        ;
+
+        
+    
+</script>
+</html>
